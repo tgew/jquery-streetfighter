@@ -37,12 +37,10 @@ body {
 
 .ryu-still {
     background-image: url('../images/ryu-standing-still.png');
-    display: none;
 }
 
 .ryu-throwing {
     background-image: url('../images/ryu-throwing-hadouken.png');
-    display: block;
 }
 
 .hadouken {
