@@ -1,11 +1,8 @@
 $(document).ready(function () {
-    // Set the focus on the div so we can see the keydown events.
-//    $(function () {
-//        $('.main').focus();
-//    })
-//    
+   
     $('.ryu').mouseenter(function () {
         $('.ryu-still').hide();
+//        $('.ryu-cool').hide();
         $('.ryu-ready').show();
     })
     .mouseleave(function () {
@@ -15,6 +12,7 @@ $(document).ready(function () {
     .mousedown(function () {
         playHadouken();
         $('.ryu-ready').hide();
+        $('.ryu-still').hide();
         $('.ryu-throwing').show();
         $('.hadouken').finish().show().animate(
             {'left': '1020px'},
@@ -40,9 +38,11 @@ $(document).ready(function () {
         }
     })
         .keyup(function () {
-            $('.ryu-cool').hide();
-            $('.ryu-still').show();
-//          console.log('keyup seen');
+            if(event.which==88) {
+                $('.ryu-cool').hide();
+                $('.ryu-still').show();
+//              console.log('keyup seen');
+            }
             });
     });
 
