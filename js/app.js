@@ -1,8 +1,23 @@
 $(document).ready(function () {
-   
+  
+    $('.intro_splash').show();
+    setTimeout(function () {
+        $('.intro_splash').hide();
+        $('.sponsor').show();
+    }, 3000);
+    
+    setTimeout(function () {
+        $('.sponsor').hide();
+        $('.tgew').show();
+    }, 6000);
+    
+    setTimeout(function () {
+        $('.tgew').hide();
+        $('.instructions').show();
+    }, 9000);
+    
     $('.ryu').mouseenter(function () {
         $('.ryu-still').hide();
-//        $('.ryu-cool').hide();
         $('.ryu-ready').show();
     })
     .mouseleave(function () {

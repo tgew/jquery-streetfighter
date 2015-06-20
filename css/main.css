@@ -5,7 +5,7 @@ body {
 .main {
     background-color: white;
     margin-top: 110px;
-    padding-left: 100px;
+    padding-left: 0px;
     min-width: 1200px;
     height: 500px;
     position: relative;
@@ -27,7 +27,7 @@ body {
     height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-throwing, .ryu-cool, .instructions, .sponsor, .tgew {
     display: none;
 }
 
@@ -58,6 +58,52 @@ body {
     top: 175px;
     left: 630px;
 }
+
+.text {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 550px;
+    height: 400px;
+    width: 600px;    
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+.intro_splash {
+    font-family: 'Sigmar One', cursive;
+    font-size: 100px;
+    height: 175px;
+    color:firebrick;
+    text-shadow: 4px 4px 4px #000;
+}
+
+.sponsor {
+    font-size: 60px;
+    margin-top: 45px;
+}
+
+.tgew {
+    font-size: 150px;
+    color: darkgreen;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: 45px;
+}
+
+.text p:nth-child(1) {
+    max-width: 300px;
+}
+
+.text p:nth-child(2) {
+    margin-left: 300px;
+}
+
+.intro {
+    font-size: 4em;
+    display: inline;
+}
+
+
 
 
 
